@@ -7,9 +7,6 @@
 //        25
 //        Sample Output
 //        15511210043330985984000000
-
-
-
 import java.math.*;
 import java.util.*;
 public class ExtraLongFactorials {
