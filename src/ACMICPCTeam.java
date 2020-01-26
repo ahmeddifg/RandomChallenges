@@ -46,7 +46,6 @@ public class ACMICPCTeam {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         String[] nm = scanner.nextLine().split(" ");
 
@@ -62,18 +61,7 @@ public class ACMICPCTeam {
         }
 
         int[] result = acmTeam(topic);
-
-        for (int i = 0; i < result.length; i++) {
-            bufferedWriter.write(String.valueOf(result[i]));
-
-            if (i != result.length - 1) {
-                bufferedWriter.write("\n");
-            }
-        }
-
-        bufferedWriter.newLine();
-
-        bufferedWriter.close();
+        Arrays.stream(result).forEach(System.out::println);
 
         scanner.close();
     }
