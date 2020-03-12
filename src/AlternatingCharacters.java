@@ -6,6 +6,8 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
+// Problem link https://www.hackerrank.com/challenges/alternating-characters/problem
+
 public class AlternatingCharacters {
 
     // Complete the alternatingCharacters function below.
