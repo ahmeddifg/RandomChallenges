@@ -14,6 +14,7 @@ public class Gemstones {
         int matchCounter = 0;
         boolean allDone = true;
         int[][] domain = new int[arr.length][26];
+
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length(); j++) {
                 domain[i][arr[i].charAt(j) - 97] = 1;

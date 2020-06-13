@@ -24,6 +24,7 @@ public class MarkAndToys {
             if (spend > k) {
                 --counter;
                 spend = spend - p;
+                break;
             }
         }
         return counter;
